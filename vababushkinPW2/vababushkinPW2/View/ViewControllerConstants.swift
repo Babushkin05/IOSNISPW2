@@ -36,4 +36,9 @@ enum ViewConstollerConstants{
     static let buttonText: String = "Add wish button"
     static let buttonRadius: CGFloat = 15
     
+    static let returnButtonText: String  = "Back"
+    static let returnButtonLeft: CGFloat = 10
+    static let returnButtonTop: CGFloat = 15
+    static let returnButtonWidth: CGFloat = 70
+    
 }

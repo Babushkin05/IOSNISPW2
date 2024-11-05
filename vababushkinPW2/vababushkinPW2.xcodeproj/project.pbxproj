@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		85D1F3032CDA213F00C661F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F3022CDA213F00C661F3 /* AppDelegate.swift */; };
 		85D1F3052CDA213F00C661F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F3042CDA213F00C661F3 /* SceneDelegate.swift */; };
-		85D1F3072CDA213F00C661F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F3062CDA213F00C661F3 /* ViewController.swift */; };
+		85D1F3072CDA213F00C661F3 /* WishMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F3062CDA213F00C661F3 /* WishMakerViewController.swift */; };
 		85D1F30C2CDA214100C661F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D1F30B2CDA214100C661F3 /* Assets.xcassets */; };
 		85D1F30F2CDA214100C661F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D1F30D2CDA214100C661F3 /* LaunchScreen.storyboard */; };
 		85D1F31A2CDA214100C661F3 /* vababushkinPW2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F3192CDA214100C661F3 /* vababushkinPW2Tests.swift */; };
@@ -19,6 +19,7 @@
 		85D1F33E2CDA4F5F00C661F3 /* SimpleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F33D2CDA4F5F00C661F3 /* SimpleColor.swift */; };
 		85D1F3402CDA52E800C661F3 /* UIView+Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F33F2CDA52E800C661F3 /* UIView+Pin.swift */; };
 		85D1F3442CDA572800C661F3 /* ViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F3432CDA572800C661F3 /* ViewControllerConstants.swift */; };
+		85D1F38B2CDABA9300C661F3 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D1F38A2CDABA9300C661F3 /* WishStoringViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		85D1F2FF2CDA213F00C661F3 /* vababushkinPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vababushkinPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D1F3022CDA213F00C661F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D1F3042CDA213F00C661F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85D1F3062CDA213F00C661F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85D1F3062CDA213F00C661F3 /* WishMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewController.swift; sourceTree = "<group>"; };
 		85D1F30B2CDA214100C661F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85D1F30E2CDA214100C661F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D1F3102CDA214100C661F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		85D1F33D2CDA4F5F00C661F3 /* SimpleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleColor.swift; sourceTree = "<group>"; };
 		85D1F33F2CDA52E800C661F3 /* UIView+Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Pin.swift"; sourceTree = "<group>"; };
 		85D1F3432CDA572800C661F3 /* ViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConstants.swift; sourceTree = "<group>"; };
+		85D1F38A2CDABA9300C661F3 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +139,9 @@
 			children = (
 				85D1F33F2CDA52E800C661F3 /* UIView+Pin.swift */,
 				85D1F3042CDA213F00C661F3 /* SceneDelegate.swift */,
-				85D1F3062CDA213F00C661F3 /* ViewController.swift */,
+				85D1F3062CDA213F00C661F3 /* WishMakerViewController.swift */,
 				85D1F3432CDA572800C661F3 /* ViewControllerConstants.swift */,
+				85D1F38A2CDABA9300C661F3 /* WishStoringViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,7 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				85D1F33E2CDA4F5F00C661F3 /* SimpleColor.swift in Sources */,
-				85D1F3072CDA213F00C661F3 /* ViewController.swift in Sources */,
+				85D1F3072CDA213F00C661F3 /* WishMakerViewController.swift in Sources */,
+				85D1F38B2CDABA9300C661F3 /* WishStoringViewController.swift in Sources */,
 				85D1F3032CDA213F00C661F3 /* AppDelegate.swift in Sources */,
 				85D1F3052CDA213F00C661F3 /* SceneDelegate.swift in Sources */,
 				85D1F3402CDA52E800C661F3 /* UIView+Pin.swift in Sources */,
