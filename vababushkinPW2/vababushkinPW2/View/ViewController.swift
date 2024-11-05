@@ -13,6 +13,9 @@ class WishMakerViewController: UIViewController {
     // MARK: color variable
     var backgroundColor: SimpleColor = SimpleColor()
     
+    // MARK: wish button
+    private let addWishButton: UIButton = UIButton(type: .system)
+    
     // MARK: view did load func
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class WishMakerViewController: UIViewController {
         configureTitle()
         configureDescription()
         configureSliders()
+        configureAddWishButton()
     }
     
     // MARK: title configuration
@@ -90,7 +94,25 @@ class WishMakerViewController: UIViewController {
             self?.backgroundColor.green = value
             self?.view.backgroundColor = self?.backgroundColor.getUIColor()
         }
+    }
         
+    private func configureAddWishButton() {
+            view.addSubview(addWishButton)
+            addWishButton.setHeight(ViewConstollerConstants.buttonHeight)
+            addWishButton.pinBottom(to: view, ViewConstollerConstants.buttonBottom)
+            addWishButton.pinHorizontal(to: view, ViewConstollerConstants.buttonSide)
+            
+            addWishButton.backgroundColor = .white
+            addWishButton.setTitleColor(.systemPink, for: .normal)
+            addWishButton.setTitle(ViewConstollerConstants.buttonText, for: .normal)
+            
+            addWishButton.layer.cornerRadius = ViewConstollerConstants.buttonRadius
+            addWishButton.addTarget(self, action: #selector(addWishButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc
+    private func addWishButtonPressed() {
+    // this will be done later!
     }
     
 }

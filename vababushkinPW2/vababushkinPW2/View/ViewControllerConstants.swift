@@ -21,7 +21,7 @@ enum ViewConstollerConstants{
     
     static let stackRadius: CGFloat = 20
     static let stackLeft: CGFloat = 20
-    static let stackButtom: CGFloat = 40
+    static let stackButtom: CGFloat = 85
     
     static let Red = "Red"
     static let Green  = "Green"
@@ -30,5 +30,10 @@ enum ViewConstollerConstants{
     static let minColor: CGFloat = 0
     static let maxColor: CGFloat = 1
     
+    static let buttonHeight: CGFloat = 35
+    static let buttonBottom: CGFloat = 40
+    static let buttonSide: CGFloat = 20
+    static let buttonText: String = "Add wish button"
+    static let buttonRadius: CGFloat = 15
     
 }
